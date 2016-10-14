@@ -1,0 +1,227 @@
+Update Log.txt
+
+This is where we put descriptions of major changes made to the repository.
+This is also where we put our TODO's for next steps needed to be done.
+
+Note: In UDK Editor, must set game type (Default and PIE) to "HBGame"
+
+Currently...
+- UnrealScript Game Logic
+    Alvin
+    Ethan
+    Julian
+    Jeremy
+    Vipul
+- UDK Map Creation
+    Alvin
+    Ethan
+- Flash Actionscript HUD Functionality
+    Alvin
+- Adobe Photoshop HUD Design
+    Ethan
+- Blender 3D Graphics
+    Jeremy
+- Maya 3D Graphics
+    Jose
+- Arduino Heartrate/Breathing Monitors
+    Ethan
+- DLL Binding
+    Vipul
+
+TODO: Smooth out the heart rate pulse in UnrealScript.
+TODO: Finish HUD design. (Bullet images)
+TODO: Make an animated mask to not scale health bar, but mask a part of it, upon damage.
+TODO: Make picking up guns a HUD element and key binding (to 'E'?)
+TODO: Customize gun animations and modeling. (Rifle)
+TODO: Get first level of game to work. (Fix crash upon loading a new level)
+TODO: Implement breathing data.
+TODO: Found a bug in ammo count. Bottom limitless. Negative ammo count shown.
+---------------------------------------------------------------------------------------------------------------------
+9/16/2014 12:20 AM PST (PUSHED TO GITHUB)
+
+Congratulations, we have reached 200 commits. This means nothing really, but it does mean we’ve done a lot of fucking work. Good job everybody! :D
+---------------------------------------------------------------------------------------------------------------------
+9/15/2014 7:45 AM PST (PUSHED TO GITHUB)
+
+Implemented polar to cartesian mapping for randomizing the direction of bullet spread.
+Gun bullet spread is now based on heart rate BPM, using ranges of values.
+HUD now takes in the spread value and displays the current spread radius.
+First level map design for demo.
+Picking up ammo now updates the display of excess ammo correctly on HUD.
+DLL-Binding is placed in necessary files.
+Cleaned up repository with up-to-date code.
+Successful Demo! Good job guys!
+---------------------------------------------------------------------------------------------------------------------
+9/13/2014 11:14 AM PST (PUSHED TO GITHUB)
+
+Added the 32bit compile bat file
+---------------------------------------------------------------------------------------------------------------------
+9/13/2014 5:18 AM PST (PUSHED LOCALLY)
+
+Got Health bar to scale with health lost.
+---------------------------------------------------------------------------------------------------------------------
+9/13/2014 4:09 AM PST (PUSHED LOCALLY)
+
+Got Flash .swf movie file to link with ammo values in-game.
+Fixed up a little more of the HUD.
+Fixed most of weapon logic.
+Added reload functionality.
+DLL-Bind data now displays in-game.
+DefaultInput.ini now reflects the key bind to reload.
+Got gun animation imported into UDK from .fbx. (Delete entire .fbx in UDK Content Browser.)
+---------------------------------------------------------------------------------------------------------------------
+9/12/2014 2:45 AM PST (PUSHED TO GITHUB)
+
+HUD now comes from Flash directly through UnrealScript code. (HBHudWrapper.uc & HBGFxHUD.uc)
+Removed Kismet HUD setup.
+Gun model from Blender now able to be textured.
+Reduced polygon count of gun model.
+Test gun code for reloading added to separate folder in repo.
+Packaging setup for HUD classes and gun models.
+Fixed hard reset problems.
+---------------------------------------------------------------------------------------------------------------------
+9/10/2014 10:32 AM PST (PUSHED TO GITHUB)
+
+Made a room for the alpha map.
+---------------------------------------------------------------------------------------------------------------------
+9/10/2014 8:32 AM PST (PUSHED TO GITHUB)
+
+Made sprinting speed slower.
+---------------------------------------------------------------------------------------------------------------------
+9/10/2014 8:11 AM PST (PUSHED TO GITHUB)
+
+FINALLY MUTED WALKING (SNEAKING). YUSSSSSS.
+---------------------------------------------------------------------------------------------------------------------
+9/10/2014 6:42 AM PST (PUSHED TO GITHUB)
+
+Potentially muted footstep sounds while walking/sneaking.
+---------------------------------------------------------------------------------------------------------------------
+9/10/2014 5:19 AM PST (PUSHED TO GITHUB)
+
+Got Scaleform GFx to work with Adobe Flash Pro CS6.
+Used a crosshair dot image.
+Replaced ratchet period crosshair with Scaleform GFx in Kismet.
+Set-up Adobe Flash to work with editing our HUD. (Actionscript is needed).
+---------------------------------------------------------------------------------------------------------------------
+9/10/2014 4:17 AM PST (PUSHED TO GITHUB)
+
+Added Flashlight Toggle.
+---------------------------------------------------------------------------------------------------------------------
+9/10/2014 3:13 AM PST (PUSHED TO GITHUB)
+
+Added test model for custom gun with a single animation. If test succeeds, this model will be enhanced.
+---------------------------------------------------------------------------------------------------------------------
+9/10/2014 1:34 AM PST (PUSHED TO GITHUB)
+
+Successfully imported companion cube into tutorial #9.
+---------------------------------------------------------------------------------------------------------------------
+9/9/2014 4:32 AM PST (PUSHED TO GITHUB)
+
+Added new gun based on a tutorial. No unique mesh/animations/sounds/particles yet. Zoom and flashlight included.
+Added weapon base station to the tutorial #9 map.
+---------------------------------------------------------------------------------------------------------------------
+9/9/2014 4:13 AM PST (PUSHED TO GITHUB)
+
+Modified test “CompanionCube” to test exported models from blender.
+---------------------------------------------------------------------------------------------------------------------
+9/8/2014 1:35 AM PST (PUSHED TO GITHUB)
+
+Removed default UT crosshair.
+Created our own ratchet test crosshair in GIMP. (Not used in UnrealScript yet...)
+Getting Adobe Master Collection for Flash and Scaleform GFx. Going to be used for HUD elements most likely.
+Added damage indicator to show getting hit.
+---------------------------------------------------------------------------------------------------------------------
+9/7/2014 9:25 AM PST (PUSHED TO GITHUB)
+
+Added a basic HUD (Heads-up Display) with health bar, ammo bar, and ammo count.
+^This file is HBHUD.uc.
+^Required binding in HBGame.uc.
+Changed default game type in Tutorial9.udk.
+Designed a concept HUD on paper.
+Added inspiration screenshots and art for HUD design.
+Removed testing output from sprint/sneak.
+Added an idea for HUD in Theme.txt.
+---------------------------------------------------------------------------------------------------------------------
+9/6/2014 7:12 AM PST (PUSHED TO GITHUB)
+
+Fixed sprint and "sneak" functionality with new files that extend UT files.
+Added folder with Readme to explain how to import the new functionalities.
+Folder 'HBGame' contains the custom game scripts.
+Folder 'UDK Settings' contains Package and Key Binding files.
+---------------------------------------------------------------------------------------------------------------------
+9/5/2014 6:07 PM PST (PUSHED TO GITHUB)
+
+Added test question to test pushing. Not important.
+Removed Thumbs.db files and added them along with .sdf files to the .gitignore.
+---------------------------------------------------------------------------------------------------------------------
+9/5/2014 5:32 PM PST (PUSHED TO GITHUB)
+
+Added sprint and walk functionality by changing UTPawn.uc and DefaultInput.ini in the UDK files.
+Added instructions on what files to replace in which respective paths.
+Still need to remove testing output and sound from walking.
+---------------------------------------------------------------------------------------------------------------------
+9/5/2014 3:03 PM PST (PUSHED TO GITHUB)
+
+Added Arduino programs.
+---------------------------------------------------------------------------------------------------------------------
+9/1/2014 3:48 PM PST (PUSHED TO GITHUB)
+
+Added crouch functionality by changing a default setting.
+---------------------------------------------------------------------------------------------------------------------
+9/1/2014 12:45 AM PST (PUSHED TO GITHUB)
+
+Added .fbx file as well as .blend files of companion cube to test exporting to UDK. Also added texture for the cube.
+---------------------------------------------------------------------------------------------------------------------
+8/27/2014 5:15 AM PST (PUSHED TO GITHUB)
+
+Organized ideas list and made a decent story line.
+Added a questions/answers text file to ask questions about things that we are unsure of.
+---------------------------------------------------------------------------------------------------------------------
+8/26/2014 11:17 PM PST (PUSHED TO GITHUB)
+
+Template Map (UDK Tutorial #9) added. Lights and Director Group.
+---------------------------------------------------------------------------------------------------------------------
+8/24/2014 10:58 PM PST (PUSHED TO GITHUB)
+
+Template Maps (UDK Tutorial #7 and #8) added. Sounds. Emissive Light.
+---------------------------------------------------------------------------------------------------------------------
+8/23/2014 6:41 PM PST (PUSHED TO GITHUB)
+
+Template Map (UDK Tutorial #6) added. Kismet and Matinee.
+---------------------------------------------------------------------------------------------------------------------
+8/21/2014 3:49 AM PST (PUSHED TO GITHUB)
+
+Template Map (UDK Tutorial #5) added. Terrain Editor.
+---------------------------------------------------------------------------------------------------------------------
+8/21/2014 1:30 AM PST (PUSHED TO GITHUB)
+
+Updated initial model of basic rifle to include bolt-action reload animation.
+---------------------------------------------------------------------------------------------------------------------
+8/20/2014 10:00 PM PST (PUSHED TO GITHUB)
+
+Added Folder for Models and Textures as well as an initial basic bolt-action rifle model, along with the textures it uses.
+---------------------------------------------------------------------------------------------------------------------
+8/20/2014 9:30 PM PST (PUSHED TO GITHUB)
+
+Updated README to include links to used software/hardware.
+---------------------------------------------------------------------------------------------------------------------
+8/20/2014 8:55 PM PST (PUSHED TO GITHUB)
+
+Added a link to the useful links text file.
+Added the program file for the arduino and Pulse Sensor. DO NOT CHANGE FILE NAME!
+^Download: http://pulsesensor.myshopify.com/blogs/news/6877119-announcing-code-version-1-1-its-out-of-beta
+^Arduino Download: http://arduino.cc/en/main/software
+---------------------------------------------------------------------------------------------------------------------
+8/20/2014 8:51 PM PST (PUSHED TO GITHUB)
+
+Template Maps (UDK Tutorial #3 and #4) added. Materials. Static Meshes.
+---------------------------------------------------------------------------------------------------------------------
+8/20/2014 6:08 PM PST (PUSHED TO GITHUB)
+
+Template Map (UDK Tutorial #2 [Michigan State: Brainspace Showcase]) added. Builder Brushes.
+^Link: https://www.youtube.com/watch?v=PIfy_k-s7k4
+---------------------------------------------------------------------------------------------------------------------
+8/19/2014 3:57 AM PST (PUSHED TO GITHUB)
+
+Initial push.
+Ideas and Work Timeline added.
